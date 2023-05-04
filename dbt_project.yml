@@ -1,0 +1,15 @@
+version: 2.0
+config-version: 2
+name: dbt_project
+profile: dbt_demo
+
+
+model-paths:
+  - "models"
+  - "data"
+
+target-path: "target"
+   
+models:
+  shop:
+    +materialized: table
